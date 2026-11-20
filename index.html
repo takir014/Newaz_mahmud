@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Newaz Mahmud – Web Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<header class="nav">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" type="button" aria-label="Switch between light and dark theme">Dark mode</button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-text">
+      <h1><span>Newaz</span><span>Mahmud</span></h1>
+      <p><strong>Student and web developer</strong> building websites with HTML, CSS and JavaScript.</p>
+      <div class="btns">
+        <a class="btn primary" href="#work">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+      </div>
+      <figure class="photo">
+        <img src="me.jpg" alt="Newaz Mahmud">
+      </figure>
+    </div>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about">
+        <div>
+          <p>Hi, I’m Newaz Mahmud, a Software Engineering student at Daffodil International University.</p>
+          <p>I build websites with HTML, CSS and JavaScript, and I also write programs in Java.</p>
+        </div>
+        <div class="skillgroups" aria-label="Skills">
+          <div><h3>Front-end</h3><ul class="skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul></div>
+          <div><h3>Programming</h3><ul class="skills"><li>Java</li></ul></div>
+          <div><h3>Tools</h3><ul class="skills"><li>Git</li><li>VS Code</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li><span class="when">2026 · Running</span><h3>Daffodil International University</h3><p>BSc in Software Engineering</p></li>
+        <li><span class="when">2023</span><h3>Shaheed Police Smrity College</h3><p>Higher Secondary Certificate (HSC), Science group</p></li>
+        <li><span class="when">2021</span><h3>Shaheed Police Smrity College</h3><p>Secondary School Certificate (SSC), Science group</p></li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Work experience</h2>
+      <p class="lead">I’m at the start of my career and haven’t held a professional role yet. Until then, I gain real experience by building things and learning from them.</p>
+      <ul class="cards">
+        <li class="card"><h3>Learning by building</h3><p>I turn what I study into real projects, like this portfolio website and my Guessing Game.</p></li>
+        <li class="card"><h3>Solid foundation</h3><p>I’m studying Software Engineering at Daffodil International University and working with HTML, CSS, JavaScript and Java.</p></li>
+        <li class="card"><h3>Open to opportunities</h3><p>I’m open to internships and entry-level roles where I can learn from a team and contribute.</p></li>
+      </ul>
+    </section>
+
+    <section id="work">
+      <h2>Projects</h2>
+      <ul class="projects" id="projects">
+        <li class="project" data-cat="web"><h3>Personal Portfolio Website</h3><p>This responsive portfolio site, with a dark mode, scroll animations and a contact form.</p><span class="stack">HTML, CSS, JavaScript</span></li>
+        <li class="project" data-cat="web"><h3>Guessing Game</h3><p>A simple guessing game I built as a personal project.</p><span class="stack">Personal project</span></li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Let’s work together</h2>
+      <form id="form">
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+      <div class="copyrow">
+        <button class="btn" id="copy" type="button">Copy my email</button>
+        <span id="copied" role="status"></span>
+      </div>
+    </section>
+  </div>
+</main>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <h3 id="dlg-title"></h3>
+  <p class="d-text"></p>
+  <p class="d-stack"></p>
+  <form method="dialog"><button class="btn">Close</button></form>
+</dialog>
+<button id="up" type="button" aria-label="Back to top">↑</button>
+<footer>
+  <div class="wrap">
+    <ul class="socials"><li><a href="#">GitHub</a></li><li><a href="#">LinkedIn</a></li><li><a href="mailto:you@example.com">Email</a></li></ul>
+    © <span id="year">2026</span> Newaz Mahmud. Built with HTML, CSS and JavaScript.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
